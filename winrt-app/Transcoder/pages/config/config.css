@@ -1,0 +1,78 @@
+﻿
+.config section[role=main] {
+    -ms-grid-row: 2;
+    height: 100%;
+}
+
+    .config section[role=main] form {
+        width: 100%;
+        height: 100%;
+        display: -ms-grid;
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: (20px 50px)[10];
+    }
+
+        .config section[role=main] form .form-group {
+            display: -ms-grid;
+            -ms-grid-columns: 0.1fr 20px 0.9fr;
+            -ms-grid-rows: 1fr;
+        }
+
+            .config section[role=main] form .form-group input {
+                width: 300px;
+            }
+
+            .config section[role=main] form .form-group .control-label {
+                -ms-grid-column: 1;
+                -ms-grid-row: 1;
+                -ms-grid-row-align: center;
+                -ms-grid-column-align: end;
+                display: block;
+            }
+
+            .config section[role=main] form .form-group .form-control {
+                -ms-grid-column: 3;
+                -ms-grid-row: 1;
+                -ms-grid-row-align: center;
+                -ms-grid-column-align: start;
+            }
+
+            .config section[role=main] form .form-group:nth-child(1) {
+                -ms-grid-row: 2;
+            }
+
+            .config section[role=main] form .form-group:nth-child(2) {
+                -ms-grid-row: 4;
+            }
+
+            .config section[role=main] form .form-group:nth-child(3) {
+                -ms-grid-row: 6;
+            }
+
+            .config section[role=main] form .form-group:nth-child(4) {
+                -ms-grid-row: 8;
+            }
+
+            .config section[role=main] form .form-group:nth-child(5) {
+                -ms-grid-row: 10;
+            }
+
+            .config section[role=main] form .form-group:nth-child(6) {
+                -ms-grid-row: 12;
+            }
+
+            .config section[role=main] form .form-group:nth-child(7) {
+                -ms-grid-row: 14;
+            }
+
+            .config section[role=main] form .form-group:nth-child(8) {
+                -ms-grid-row: 16;
+            }
+
+            .config section[role=main] form .form-group:nth-child(9) {
+                -ms-grid-row: 18;
+            }
+
+            .config section[role=main] form .form-group:nth-child(10) {
+                -ms-grid-row: 20;
+            }

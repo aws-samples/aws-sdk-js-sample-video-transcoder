@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "AWS JavaScript SDK",
+  "description": "A video transcoder extension built with the AWS SDK for JavaScript",
+
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "images/logo.png"
+  },
+
+  "background" : {
+    "persistent": true,
+    "scripts": [
+      "js/lib/aws-sdk.js",
+      "js/app.js",
+      "js/ui.js"
+    ]
+  },
+
+  "permissions": [
+    "notifications",
+    "https://*.amazonaws.com/"
+  ],
+
+  "options_page": "options.html"
+}

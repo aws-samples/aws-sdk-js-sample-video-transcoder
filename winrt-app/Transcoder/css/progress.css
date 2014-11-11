@@ -1,0 +1,57 @@
+﻿.progress-indicator {
+    display: -ms-grid;
+    -ms-grid-columns: 80px 1fr 100px 50px ;
+    -ms-grid-rows: 25px 1fr;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+    .progress-indicator .logo {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        -ms-grid-row-align: center;
+        -ms-grid-column-align: center;
+        height: 50px;
+        width: 50px;
+    }
+
+    .progress-indicator .progress-bar {
+        -ms-grid-column: 2;
+        -ms-grid-row: 1;
+        height: 20px;
+        width: 100%;
+        -ms-grid-row-align: center;
+    }
+
+    .progress-indicator .progress-bar-label {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+        display:block;
+        -ms-grid-column-align: center;
+        -ms-grid-row-align: center;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .progress-indicator .progress-message{
+        -ms-grid-column: 2;
+        -ms-grid-row: 2;
+        text-align: left;
+        -ms-grid-row-align: center;
+    }
+
+    .progress-indicator .dismiss {
+        -ms-grid-column: 4;
+        -ms-grid-row: 1;
+        opacity: 0.7;
+        font-weight: bold;
+        font-size: 1.4em;
+        cursor: pointer;
+        display: block;
+    }
+
+        .progress-indicator .dismiss:hover {
+            opacity: 1;
+        }

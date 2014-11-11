@@ -1,0 +1,13 @@
+{
+  "name": "etsconsole",
+  "version": "1.0.0",
+  "description": "Console application to encode files using Amazon Elastic Transcoder.",
+  "main": "console.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "aws-sdk": ">= 2.0.17",
+    "mime": "*"
+  }
+}

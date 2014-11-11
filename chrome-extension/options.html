@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transcoder Options</title>
+    <script src="js/options.js"></script>
+    <link rel="stylesheet" href="stylesheets/normalize.css"/>
+    <link rel="stylesheet" href="stylesheets/bootstrap.css"/>
+    <link rel="stylesheet" href="stylesheets/app.css"/>
+  </head>
+  <body class="options">
+    <main class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <form action="#" id="config-form" role="form" class="form-horizontal">
+            <div class="form-group">
+              <div id="notification" class="col-lg-12 bg-success notification hidden">
+                <h4>Your configuration was saved correctly.</h4>
+              </div>
+            </div>
+            <div class="form-group"><h2 class="col-lg-12">Credentials</h2></div>
+            <div class="form-group">
+              <label for="access-key" class="col-lg-2 control-label">Access Key ID</label>
+              <div class="col-lg-5">
+                <input id="access-key" class="form-control" type="text" name="accessKeyId" required >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="secret-access-key" class="col-lg-2 control-label">Secret Access Key</label>
+              <div class="col-lg-5">
+                <input id="secret-access-key" class="form-control" type="password" name="secretAccessKey" required >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="region" class="col-lg-2 control-label">Region</label>
+              <div class="col-lg-5">
+                <input id="region" class="form-control" type="text" placeholder="us-west-2" name="region" required >
+              </div>
+            </div>
+            <div class="form-group"><h2 class="col-lg-12">Elastic Transcoder Configuration</h2></div>
+            <div class="form-group">
+              <label for="input-bucket" class="col-lg-2 control-label">Input Bucket</label>
+              <div class="col-lg-5">
+                <input id="input-bucket" class="form-control" type="text" placeholder="S3 bucket containing source files" name="inputBucket" required >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="content-bucket" class="col-lg-2 control-label">Content Bucket</label>
+              <div class="col-lg-5">
+                <input id="content-bucket" class="form-control" type="text" placeholder="S3 bucket to store encoded files" name="contentBucket" required >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="thumbnail-bucket" class="col-lg-2 control-label">Thumbnail Bucket</label>
+              <div class="col-lg-5">
+                <input id="thumbnail-bucket" class="form-control" type="text" placeholder="S3 bucket to store thumbnails" name="thumbnailBucket" required >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="pipeline-name" class="col-lg-2 control-label">Pipeline Name</label>
+              <div class="col-lg-5">
+                <input id="pipeline-name" class="form-control" type="text" placeholder="Name of Elastic Transcoder pipeline" name="pipelineName" required >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="transcoder-role" class="col-lg-2 control-label">Transcoder Role (ARN)</label>
+              <div class="col-lg-5">
+                <input id="transcoder-role" class="form-control" type="text" placeholder="arn:aws:iam::account-id:role/role-name" name="transcoderRole" required >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="preset-id" class="col-lg-2 control-label">Transcoder Preset ID</label>
+              <div class="col-lg-5">
+                <input id="preset-id" class="form-control" type="text" placeholder="1351620000001-xxxxxx" name="presetId" required >
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-lg-1 col-lg-offset-6"><button id="save" type="submit" class="btn btn-primary">Save</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

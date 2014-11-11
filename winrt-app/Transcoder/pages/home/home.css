@@ -1,0 +1,51 @@
+﻿.home header[role=banner] {
+    -ms-grid-column-align: stretch;
+}
+
+.home header[role=banner] .titlearea {
+    display: -ms-flexbox;
+    -ms-flex-pack: justify;
+    -ms-flex-align: center;
+}
+
+.home section[role=main] {
+    display: -ms-grid;
+    -ms-grid-columns: 40px 80px 1fr 40px 1fr 40px;
+    -ms-grid-rows: 1fr;
+}
+    .home section[role=main] .container {
+        border-width: 4px;
+    }
+
+    .home section[role=main] .upload {
+        -ms-grid-column: 3;
+        border-color: #a0a0a0;
+        color: #a0a0a0;
+        border-style: dashed;
+        position:relative;
+        text-align: center;
+        padding:10px;
+    }
+
+    .home section[role=main] .download {
+        padding: 15px;
+    }
+
+    .home section[role=main] .download .thumbnail {
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .home section[role=main] .prompt {
+        z-index: -100;
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 100%;
+    }
+
+    .home section[role=main] .download {
+        -ms-grid-column: 5;
+        border-color: #0094ff;
+        border-style: solid;
+    }

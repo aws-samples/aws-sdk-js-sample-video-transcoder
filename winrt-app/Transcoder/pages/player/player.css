@@ -1,0 +1,12 @@
+﻿.player section[role=main] {
+    display: -ms-grid;
+    -ms-grid-columns: 80px 1fr 80px;
+    -ms-grid-rows: 1fr;
+}
+
+    .player section[role=main] video {
+        -ms-grid-column: 2;
+        -ms-grid-row: 1;
+        -ms-grid-column-align: center;
+        height: 100%;
+    }

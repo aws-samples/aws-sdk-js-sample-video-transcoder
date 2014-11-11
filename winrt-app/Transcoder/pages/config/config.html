@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Configure</title>
+
+    <link href="config.css" rel="stylesheet" />
+    <script src="config.js"></script>
+</head>
+<body>
+    <div class="fragment config">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Configure</span>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+            <form id="config-form">
+                <div class="form-group">
+                    <label for="access-key-id" class="control-label">Access Key ID</label>
+                    <input id="access-key-id" class="form-control" type="text" name="accessKeyId" data-sensitive="true" required>
+                </div>
+                <div class="form-group">
+                    <label for="secret-access-key" class="control-label">Secret Access Key</label>
+                    <input id="secret-access-key" class="form-control" type="password" name="secretAccessKey" data-sensitive="true" required>
+                </div>
+                <div class="form-group">
+                    <label for="region" class="control-label">Region</label>
+                    <input id="region" class="form-control" type="text" name="region" placeholder="us-west-2" required>
+                </div>
+                <div class="form-group">
+                    <label for="input-bucket" class="control-label">Input Bucket</label>
+                    <input id="input-bucket" class="form-control" type="text" name="inputBucket" placeholder="S3 bucket containing source files" required>
+                </div>
+                <div class="form-group">
+                    <label for="content-bucket" class="control-label">Content Bucket</label>
+                    <input id="content-bucket" class="form-control" type="text" name="contentBucket" placeholder="S3 bucket to store encoded files" required>
+                </div>
+                <div class="form-group">
+                    <label for="thumbnail-bucket" class="control-label">Thumbnaiil Bucket</label>
+                    <input id="thumbnail-bucket" class="form-control" type="text" name="thumbnailBucket" placeholder="S3 bucket to store video thumbnails" required>
+                </div>
+                <div class="form-group">
+                    <label for="pipeline-name" class="control-label">Pipeline Bucket</label>
+                    <input id="pipeline-name" class="form-control" type="text" name="pipelineName" placeholder="Name of Elastic Transcoder pipeline" required>
+                </div>
+                <div class="form-group">
+                    <label for="transcoder-role" class="control-label">Transcoder Role</label>
+                    <input id="transcoder-role" class="form-control" type="text" name="transcoderRole" placeholder="arn:aws:iam::account-id:role/role-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="preset-id" class="control-label">Preset ID</label>
+                    <input id="preset-id" class="form-control" type="text" name="presetId" placeholder="1351620000001-000001" required>
+                </div>
+                <div class="form-group">
+                    <button id="save" type="submit" class="button default form-control">Save</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

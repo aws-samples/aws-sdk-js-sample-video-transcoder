@@ -1,0 +1,62 @@
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+
+.panel {
+    height:70vh;
+    margin-top: 15vh;
+    border-width: 4px;
+    border-color: #AAAAAA;
+    color: #AAAAAA;
+}
+
+.panel:nth-child(1) {
+    border-style: dashed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.panel:nth-child(2) {
+    border-style: solid;
+    padding: 15px; 
+}
+
+input[type='file'] {
+    visibility: hidden;
+    position: fixed;
+    height: 0;
+    width: 0;
+    top: -999px;
+    left: -999px;
+}
+
+.options {
+    background-color: #272b30;
+}
+
+.options main {
+    padding-top: 20px;
+}
+
+.notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    text-align: center;
+    padding: 8px;
+    z-index: 10;
+}
+
+.notification p {
+    margin: 0;
+}
+
+.panel .download {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
